@@ -79,3 +79,19 @@ hr {
 .password.copied {
     background-color: #bed0ca;
 }
+
+#password-length {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #2F3E53;
+    color: white;
+    border: none;
+    line-height: 1.5;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+::placeholder {
+    color: #D5D4D8;
+    text-indent: 3px;
+}
