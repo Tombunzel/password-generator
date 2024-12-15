@@ -27,11 +27,11 @@ function suggestPasswords() {
 function copyFirstPasswordToClipboard() {
     navigator.clipboard.writeText(passwordOneEl.textContent)
     passwordOneEl.classList.add('copied');
-    setTimeout(() => passwordOneEl.classList.remove('copied'), 1500);
+    setTimeout(() => passwordOneEl.classList.remove('copied'), 750);
 }
 
 function copySecondPasswordToClipboard() {
     navigator.clipboard.writeText(passwordTwoEl.textContent)
     passwordTwoEl.classList.add('copied');
-    setTimeout(() => passwordTwoEl.classList.remove('copied'), 1500);
+    setTimeout(() => passwordTwoEl.classList.remove('copied'), 750);
 }
