@@ -4,6 +4,7 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 let generatorBtn = document.getElementById("generator-btn")
 let passwordOneEl = document.getElementById("password-one")
 let passwordTwoEl = document.getElementById("password-two")
+const passwordLengthEl = document.getElementById("password-length")
 
 generatorBtn.addEventListener("click", suggestPasswords)
 passwordOneEl.addEventListener("click", copyFirstPasswordToClipboard)
@@ -11,7 +12,7 @@ passwordTwoEl.addEventListener("click", copySecondPasswordToClipboard)
 
 function generatePassword() {
     let password = ""
-    let passwordLength = 15
+    let passwordLength = passwordLengthEl.value
     for (i = 0; i < passwordLength; i++) {
         let randomIndex = Math.floor( Math.random() * characters.length)
         password += characters[randomIndex]
