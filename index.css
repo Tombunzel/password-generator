@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    background-color: #1C1C1C;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    size: 100%
+}
+
+hr {
+    background-color: #2F3E53;
+    height: 2px;
+    border: 0;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.container {
+    width: 80%;
+    max-width: 500px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+}
+
+.generator-card {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 52px;
+    background-color: #1F2937;
+}
+
+#title-green {
+    color: #10B981;
+}
+
+#subtitle {
+    color: #D5D4D8;
+}
+
+.generator-btn {
+    background-color: #10B981;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 5px;
+    border: none;
+    font-weight: light;
+    font-size: small;
+    cursor: pointer;
+}
+
+.passwords {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.password {
+    width: 25ch;
+    line-height: 2;
+    border-radius: 4px;
+    color: #55F991;
+    font-size: 14px;
+    background-color: #2F3E53;
+    text-align: center;
+    vertical-align: bottom;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+.password.copied {
+    background-color: #bed0ca;
+}
